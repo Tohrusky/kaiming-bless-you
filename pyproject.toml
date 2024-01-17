@@ -1,0 +1,69 @@
+[project]
+dependencies = []
+name = "kaiming-bless-you"
+requires-python = ">=3.8"
+version = "0.0.1"
+
+[tool.mypy]
+disable_error_code = "attr-defined"
+disallow_any_generics = false
+ignore_missing_imports = true
+strict = true
+warn_return_any = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+  "-e pkg-core @ file:///${PROJECT_ROOT}/packages/kaiming-ascii",
+  "-e pkg-core @ file:///${PROJECT_ROOT}/packages/cvpr"
+]
+lint = [
+  "pre-commit",
+  "ruff",
+  "mypy"
+]
+test = [
+  "pytest",
+  "pytest-cov",
+  "types-PyYAML"
+]
+
+[tool.pdm.scripts.lint]
+composite = [
+  "mypy packages",
+  "ruff check . --fix --exit-non-zero-on-fix",
+  "ruff format ."
+]
+help = "Check code style against linters"
+
+[tool.pdm.scripts.post_install]
+composite = [
+  "pre-commit install"
+]
+help = "Install the pre-commit hook"
+
+[tool.ruff]
+extend-ignore = ["B018", "B019", "PGH003", "E721", "C408", "RUF012"]
+extend-select = [
+  "I",  # isort
+  "B",  # flake8-bugbear
+  "C4",  # flake8-comprehensions
+  "PGH",  # pygrep-hooks
+  "RUF",  # ruff
+  "W",  # pycodestyle
+  "YTT"  # flake8-2020
+]
+fixable = ["ALL"]
+line-length = 120
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[tool.ruff.isort]
+combine-as-imports = true
+known-first-party = ["pdm"]
+
+[tool.ruff.mccabe]
+max-complexity = 10
