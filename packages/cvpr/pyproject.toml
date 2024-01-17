@@ -9,10 +9,13 @@ authors = [
 classifiers = [
   "Programming Language :: Python :: 3"
 ]
+dependencies = [
+  "kaiming-ascii~=0.1.0"
+]
 license = {text = "MIT"}
 name = "cvpr"
 readme = "README.md"
 requires-python = ">=3.8"
-version = "0.1.0"
+version = "0.1.1"
 
 [tool.pdm]
