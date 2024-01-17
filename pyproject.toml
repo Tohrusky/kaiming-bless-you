@@ -16,7 +16,8 @@ dev = [
   "-e kaiming-ascii @ file:///${PROJECT_ROOT}/packages/kaiming-ascii",
   "-e cvpr @ file:///${PROJECT_ROOT}/packages/cvpr",
   "-e eccv @ file:///${PROJECT_ROOT}/packages/eccv",
-  "-e aaai @ file:///${PROJECT_ROOT}/packages/aaai"
+  "-e aaai @ file:///${PROJECT_ROOT}/packages/aaai",
+  "-e ijcai @ file:///${PROJECT_ROOT}/packages/ijcai"
 ]
 lint = [
   "pre-commit",

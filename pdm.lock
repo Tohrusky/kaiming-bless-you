@@ -5,7 +5,7 @@
 groups = ["default", "dev", "lint", "test"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:6fb9a380e902808eea90d1f12692cab51e4cb5a3b3cea7f576dc0eb8c2362a42"
+content_hash = "sha256:d9e821ecc154a598e0a55248a57409be7d91e35a44a4152a5879688ee01d5a3d"
 
 [[package]]
 name = "aaai"
@@ -235,6 +235,18 @@ groups = ["lint"]
 files = [
     {file = "identify-2.5.33-py2.py3-none-any.whl", hash = "sha256:d40ce5fcd762817627670da8a7d8d8e65f24342d14539c59488dc603bf662e34"},
     {file = "identify-2.5.33.tar.gz", hash = "sha256:161558f9fe4559e1557e1bff323e8631f6a0e4837f7497767c1782832f16b62d"},
+]
+
+[[package]]
+name = "ijcai"
+version = "0.1.2"
+requires_python = ">=3.8"
+editable = true
+path = "./packages/ijcai"
+summary = ""
+groups = ["dev"]
+dependencies = [
+    "kaiming-ascii~=0.1.0",
 ]
 
 [[package]]
