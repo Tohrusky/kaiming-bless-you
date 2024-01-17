@@ -12,7 +12,16 @@ jobs:
       matrix:
         python-version: ["3.11"]
         pkg-name:
-          ["kaiming-ascii", "cvpr", "eccv", "aaai", "ijcai", "icml", "iclr"]
+          [
+            "kaiming-ascii",
+            "cvpr",
+            "eccv",
+            "aaai",
+            "ijcai",
+            "icml",
+            "iclr",
+            "emnlp",
+          ]
 
     runs-on: ubuntu-20.04
     steps:

@@ -19,7 +19,8 @@ dev = [
   "-e aaai @ file:///${PROJECT_ROOT}/packages/aaai",
   "-e ijcai @ file:///${PROJECT_ROOT}/packages/ijcai",
   "-e icml @ file:///${PROJECT_ROOT}/packages/icml",
-  "-e iclr @ file:///${PROJECT_ROOT}/packages/iclr"
+  "-e iclr @ file:///${PROJECT_ROOT}/packages/iclr",
+  "-e emnlp @ file:///${PROJECT_ROOT}/packages/emnlp"
 ]
 lint = [
   "pre-commit",
@@ -45,6 +46,10 @@ composite = [
   "pre-commit install"
 ]
 help = "Install the pre-commit hook"
+
+[tool.pdm.scripts.test]
+cmd = "pytest tests --cov=packages --cov-report=xml --cov-report=html"
+help = "Run tests with coverage"
 
 [tool.ruff]
 extend-ignore = ["B018", "B019", "PGH003", "E721", "C408", "RUF012"]

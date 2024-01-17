@@ -5,7 +5,7 @@
 groups = ["default", "dev", "lint", "test"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:060b0b4844d724b2ee24a98388e3d968ea6ebe19ca8638e2cec09f9ba43b6f4d"
+content_hash = "sha256:a9d86abaf97b33dc8d91812c9047f567522012c6de3f7b277805f83eae0afbb6"
 
 [[package]]
 name = "aaai"
@@ -197,6 +197,18 @@ version = "0.1.2"
 requires_python = ">=3.8"
 editable = true
 path = "./packages/eccv"
+summary = ""
+groups = ["dev"]
+dependencies = [
+    "kaiming-ascii~=0.1.0",
+]
+
+[[package]]
+name = "emnlp"
+version = "0.1.2"
+requires_python = ">=3.8"
+editable = true
+path = "./packages/emnlp"
 summary = ""
 groups = ["dev"]
 dependencies = [
