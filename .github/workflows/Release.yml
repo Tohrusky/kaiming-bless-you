@@ -1,4 +1,4 @@
-name: Release-cvpr
+name: Release
 
 on:
   workflow_dispatch:
@@ -11,6 +11,7 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.11"]
+        pkg-name: ["kaiming-ascii", "cvpr", "eccv"]
 
     runs-on: ubuntu-20.04
     steps:
@@ -35,11 +36,12 @@ jobs:
 
       - name: Build package
         run: |
-          cd packages/cvpr
+          cd packages/${{ matrix.pkg-name }}
           pdm build
 
       - name: Publish a Python distribution to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{ secrets.PYPI_API }}
-          packages-dir: packages/cvpr/dist
+          packages-dir: packages/${{ matrix.pkg-name }}/dist
+        continue-on-error: true
