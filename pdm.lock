@@ -5,7 +5,7 @@
 groups = ["default", "dev", "lint", "test"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:3a7ac1b76d267ece0b5b4f3b4a442dc612cf7254ce696fabcc9f16ab61147ded"
+content_hash = "sha256:ca302f6fae7e8f59ecc89a2c525dd291f457f8128c21b215a00472525e40ff1a"
 
 [[package]]
 name = "aaai"
@@ -306,6 +306,18 @@ groups = ["test"]
 files = [
     {file = "iniconfig-2.0.0-py3-none-any.whl", hash = "sha256:b6a85871a79d2e3b22d2d1b94ac2824226a63c6b741c88f7ae975f18b6778374"},
     {file = "iniconfig-2.0.0.tar.gz", hash = "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3"},
+]
+
+[[package]]
+name = "jmlr"
+version = "0.1.2"
+requires_python = ">=3.8"
+editable = true
+path = "./packages/jmlr"
+summary = ""
+groups = ["dev"]
+dependencies = [
+    "kaiming-ascii~=0.1.0",
 ]
 
 [[package]]

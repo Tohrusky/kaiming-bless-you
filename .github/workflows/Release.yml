@@ -23,6 +23,7 @@ jobs:
             "emnlp",
             "tpami",
             "ijcv",
+            "jmlr",
           ]
 
     runs-on: ubuntu-20.04
