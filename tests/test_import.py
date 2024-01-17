@@ -5,6 +5,7 @@ import emnlp
 import iclr
 import icml
 import ijcai
+import tpami
 
 
 def test_import() -> None:
@@ -15,3 +16,4 @@ def test_import() -> None:
     icml.kaiming()
     iclr.kaiming()
     emnlp.kaiming()
+    tpami.kaiming()
