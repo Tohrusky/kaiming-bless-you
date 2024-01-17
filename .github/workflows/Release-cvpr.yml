@@ -1,4 +1,4 @@
-name: Release-pypi
+name: Release-cvpr
 
 on:
   workflow_dispatch:
@@ -35,24 +35,11 @@ jobs:
 
       - name: Build package
         run: |
-          mkdir -p dist
-
-          pdm install
-
-          cd packages/kaiming-ascii
-          pdm build
-          cp dist/* ../../dist
-          cd ../..
-
           cd packages/cvpr
           pdm build
-          cp dist/* ../../dist
-          cd ../..
-
-          cd dist
-          ls
 
       - name: Publish a Python distribution to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{ secrets.PYPI_API }}
+          packages-dir: packages/cvpr/dist
