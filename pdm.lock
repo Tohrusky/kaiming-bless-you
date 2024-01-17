@@ -5,7 +5,19 @@
 groups = ["default", "dev", "lint", "test"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:d104e26989b7358b6a69b0935b2a914558d6f9a011bd5a5861032e32e60e815a"
+content_hash = "sha256:6fb9a380e902808eea90d1f12692cab51e4cb5a3b3cea7f576dc0eb8c2362a42"
+
+[[package]]
+name = "aaai"
+version = "0.1.2"
+requires_python = ">=3.8"
+editable = true
+path = "./packages/aaai"
+summary = ""
+groups = ["dev"]
+dependencies = [
+    "kaiming-ascii~=0.1.0",
+]
 
 [[package]]
 name = "cfgv"
@@ -159,7 +171,7 @@ files = [
 
 [[package]]
 name = "cvpr"
-version = "0.1.0"
+version = "0.1.2"
 requires_python = ">=3.8"
 editable = true
 path = "./packages/cvpr"

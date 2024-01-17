@@ -2,7 +2,7 @@
 dependencies = []
 name = "kaiming-bless-you"
 requires-python = ">=3.8"
-version = "0.0.1"
+version = "0.1.2"
 
 [tool.mypy]
 disable_error_code = "attr-defined"
@@ -13,9 +13,10 @@ warn_return_any = false
 
 [tool.pdm.dev-dependencies]
 dev = [
-  "-e pkg-core @ file:///${PROJECT_ROOT}/packages/kaiming-ascii",
-  "-e pkg-core @ file:///${PROJECT_ROOT}/packages/cvpr",
-  "-e pkg-core @ file:///${PROJECT_ROOT}/packages/eccv"
+  "-e kaiming-ascii @ file:///${PROJECT_ROOT}/packages/kaiming-ascii",
+  "-e cvpr @ file:///${PROJECT_ROOT}/packages/cvpr",
+  "-e eccv @ file:///${PROJECT_ROOT}/packages/eccv",
+  "-e aaai @ file:///${PROJECT_ROOT}/packages/aaai"
 ]
 lint = [
   "pre-commit",

@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.11"]
-        pkg-name: ["kaiming-ascii", "cvpr", "eccv"]
+        pkg-name: ["kaiming-ascii", "cvpr", "eccv", "aaai"]
 
     runs-on: ubuntu-20.04
     steps:
