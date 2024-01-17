@@ -5,7 +5,7 @@
 groups = ["default", "dev", "lint", "test"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:aea6937f3694eb066598cd9064590b7a124594a7526282967ccaca2b5471f7d8"
+content_hash = "sha256:d104e26989b7358b6a69b0935b2a914558d6f9a011bd5a5861032e32e60e815a"
 
 [[package]]
 name = "cfgv"
@@ -165,6 +165,9 @@ editable = true
 path = "./packages/cvpr"
 summary = ""
 groups = ["dev"]
+dependencies = [
+    "kaiming-ascii~=0.1.0",
+]
 
 [[package]]
 name = "distlib"
@@ -174,6 +177,18 @@ groups = ["lint"]
 files = [
     {file = "distlib-0.3.8-py2.py3-none-any.whl", hash = "sha256:034db59a0b96f8ca18035f36290806a9a6e6bd9d1ff91e45a7f172eb17e51784"},
     {file = "distlib-0.3.8.tar.gz", hash = "sha256:1530ea13e350031b6312d8580ddb6b27a104275a31106523b8f123787f494f64"},
+]
+
+[[package]]
+name = "eccv"
+version = "0.1.2"
+requires_python = ">=3.8"
+editable = true
+path = "./packages/eccv"
+summary = ""
+groups = ["dev"]
+dependencies = [
+    "kaiming-ascii~=0.1.0",
 ]
 
 [[package]]
@@ -223,7 +238,7 @@ files = [
 
 [[package]]
 name = "kaiming-ascii"
-version = "0.1.0"
+version = "0.1.1"
 requires_python = ">=3.8"
 editable = true
 path = "./packages/kaiming-ascii"

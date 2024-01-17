@@ -14,7 +14,8 @@ warn_return_any = false
 [tool.pdm.dev-dependencies]
 dev = [
   "-e pkg-core @ file:///${PROJECT_ROOT}/packages/kaiming-ascii",
-  "-e pkg-core @ file:///${PROJECT_ROOT}/packages/cvpr"
+  "-e pkg-core @ file:///${PROJECT_ROOT}/packages/cvpr",
+  "-e pkg-core @ file:///${PROJECT_ROOT}/packages/eccv"
 ]
 lint = [
   "pre-commit",
