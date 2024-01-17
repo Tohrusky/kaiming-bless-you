@@ -5,7 +5,7 @@
 groups = ["default", "dev", "lint", "test"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:3daa9eb7f34cec6393fb3c2f30d64cf43e66b07bfb50cf4c4ac59ea5e6339edb"
+content_hash = "sha256:060b0b4844d724b2ee24a98388e3d968ea6ebe19ca8638e2cec09f9ba43b6f4d"
 
 [[package]]
 name = "aaai"
@@ -224,6 +224,18 @@ groups = ["lint"]
 files = [
     {file = "filelock-3.13.1-py3-none-any.whl", hash = "sha256:57dbda9b35157b05fb3e58ee91448612eb674172fab98ee235ccb0b5bee19a1c"},
     {file = "filelock-3.13.1.tar.gz", hash = "sha256:521f5f56c50f8426f5e03ad3b281b490a87ef15bc6c526f168290f0c7148d44e"},
+]
+
+[[package]]
+name = "iclr"
+version = "0.1.2"
+requires_python = ">=3.8"
+editable = true
+path = "./packages/iclr"
+summary = ""
+groups = ["dev"]
+dependencies = [
+    "kaiming-ascii~=0.1.0",
 ]
 
 [[package]]

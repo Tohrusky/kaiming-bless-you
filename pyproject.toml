@@ -18,7 +18,8 @@ dev = [
   "-e eccv @ file:///${PROJECT_ROOT}/packages/eccv",
   "-e aaai @ file:///${PROJECT_ROOT}/packages/aaai",
   "-e ijcai @ file:///${PROJECT_ROOT}/packages/ijcai",
-  "-e icml @ file:///${PROJECT_ROOT}/packages/icml"
+  "-e icml @ file:///${PROJECT_ROOT}/packages/icml",
+  "-e iclr @ file:///${PROJECT_ROOT}/packages/iclr"
 ]
 lint = [
   "pre-commit",
