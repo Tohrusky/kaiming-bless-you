@@ -5,7 +5,7 @@
 groups = ["default", "dev", "lint", "test"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:57699678f66cb8adb31b75f92fc3934648cc8de417e68b8c5a9b689bcaf11141"
+content_hash = "sha256:3a7ac1b76d267ece0b5b4f3b4a442dc612cf7254ce696fabcc9f16ab61147ded"
 
 [[package]]
 name = "aaai"
@@ -279,6 +279,18 @@ version = "0.1.2"
 requires_python = ">=3.8"
 editable = true
 path = "./packages/ijcai"
+summary = ""
+groups = ["dev"]
+dependencies = [
+    "kaiming-ascii~=0.1.0",
+]
+
+[[package]]
+name = "ijcv"
+version = "0.1.2"
+requires_python = ">=3.8"
+editable = true
+path = "./packages/ijcv"
 summary = ""
 groups = ["dev"]
 dependencies = [

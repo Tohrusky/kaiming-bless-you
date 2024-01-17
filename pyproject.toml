@@ -21,7 +21,8 @@ dev = [
   "-e icml @ file:///${PROJECT_ROOT}/packages/icml",
   "-e iclr @ file:///${PROJECT_ROOT}/packages/iclr",
   "-e emnlp @ file:///${PROJECT_ROOT}/packages/emnlp",
-  "-e tpami @ file:///${PROJECT_ROOT}/packages/tpami"
+  "-e tpami @ file:///${PROJECT_ROOT}/packages/tpami",
+  "-e ijcv @ file:///${PROJECT_ROOT}/packages/ijcv"
 ]
 lint = [
   "pre-commit",
